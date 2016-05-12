@@ -5,6 +5,9 @@ os:
   # osx is not supported yet
   #- osx
 
+sudo: required
+dist: trusty
+
 python:
   - "2.6"
   - "2.7"

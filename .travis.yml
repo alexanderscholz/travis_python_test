@@ -2,7 +2,8 @@ language: python
 
 os:
   - linux
-  - osx
+  # osx is not supported yet
+  #- osx
 
 python:
   - "2.6"
@@ -11,6 +12,9 @@ python:
   - "3.3"
   - "3.4"
   - "3.5"
+
+virtualenv:
+  system_site_packages: false
 
 # command to run tests
 script: nosetests

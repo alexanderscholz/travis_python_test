@@ -4,6 +4,7 @@ language: python
 
 matrix:
   include:
+    # Ubuntu 12.04.5 LTS
     - os: linux
       python: '2.6'
     - os: linux
@@ -15,6 +16,7 @@ matrix:
     - os: linux
       python: '3.5'
 
+    # Ubuntu 14.04.3 LTS
     - os: linux
       dist: trusty
       python: '2.6'
@@ -31,27 +33,12 @@ matrix:
       dist: trusty
       python: '3.5'
 
-    - os: osx
-      language: python
-      env: PYENV_VERSION=2.7.11
-    - os: osx
-      language: python
-      env: PYENV_VERSION=3.5.1
-
-#os:
-#  - linux
-  # osx is not supported yet
-  #- osx
-
-#dist: trusty
-
-#python:
-#  - "2.6"
-#  - "2.7"
-#  - "3.2"
-#  - "3.3"
-#  - "3.4"
-#  - "3.5"
+    #- os: osx
+    #  language: python
+    #  env: PYENV_VERSION=2.7.11
+    #- os: osx
+    #  language: python
+    #  env: PYENV_VERSION=3.5.1
 
 virtualenv:
   # without this, python 3.5 will not work

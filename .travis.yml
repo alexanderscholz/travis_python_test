@@ -32,10 +32,10 @@ matrix:
       python: '3.5'
 
     - os: osx
-      language: objective-c
+      language: python
       env: PYENV_VERSION=2.7.11
     - os: osx
-      language: objective-c
+      language: python
       env: PYENV_VERSION=3.5.1
 
 #os:

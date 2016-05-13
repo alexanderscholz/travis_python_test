@@ -49,4 +49,4 @@ install: "pip install -r requirements.txt"
 
 # command to run tests
 #script: nosetests
-script: shell_test.sh
+script: sh shell_test.sh

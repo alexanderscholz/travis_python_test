@@ -68,10 +68,10 @@ matrix:
       osx_image: xcode8.1
       language: generic
       env: PYENV_VERSION=2.7.12
-      - os: osx
-        osx_image: xcode8.1
-        language: generic
-        env: PYENV_VERSION=3.6.0
+    - os: osx
+      osx_image: xcode8.1
+      language: generic
+      env: PYENV_VERSION=3.6.0
 
     # OS X 10.12 
     - os: osx

@@ -7,35 +7,35 @@ matrix:
     # Ubuntu 12.04.5 LTS
     - os: linux
       python: '2.6'
-    - os: linux
-      python: '2.7'
-    - os: linux
-      python: '3.3'
-    - os: linux
-      python: '3.4'
-    - os: linux
-      python: '3.5'
+    #- os: linux
+    #  python: '2.7'
+    #- os: linux
+    #  python: '3.3'
+    #- os: linux
+    #  python: '3.4'
+    #- os: linux
+    #  python: '3.5'
 
     # Ubuntu 14.04.3 LTS
-    - os: linux
-      dist: trusty
-      python: '2.6'
-    - os: linux
-      dist: trusty
-      python: '2.7'
-    - os: linux
-      dist: trusty
-      python: '3.3'
-    - os: linux
-      dist: trusty
-      python: '3.4'
-    - os: linux
-      dist: trusty
-      python: '3.5'
+    #- os: linux
+    #  dist: trusty
+    #  python: '2.6'
+    #- os: linux
+    #  dist: trusty
+    #  python: '2.7'
+    #- os: linux
+    #  dist: trusty
+    #  python: '3.3'
+    #- os: linux
+    #  dist: trusty
+    #  python: '3.4'
+    #- os: linux
+    #  dist: trusty
+    #  python: '3.5'
 
-    #- os: osx
-    #  language: python
-    #  env: PYENV_VERSION=2.7.11
+    - os: osx
+      language: python
+      env: PYENV_VERSION=2.7.11
     #- os: osx
     #  language: python
     #  env: PYENV_VERSION=3.5.1

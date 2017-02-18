@@ -54,10 +54,10 @@ matrix:
       #  env: PYENV_VERSION=3.5.1
 
     # OS X 10.11
-    - os: osx
-      osx_image: xcode8
-      language: generic
-      env: PYENV_VERSION=2.7.12
+    #- os: osx
+    #  osx_image: xcode8
+    #  language: generic
+    #  env: PYENV_VERSION=2.7.12
       #- os: osx
       #  osx_image: xcode8
       #  language: generic
@@ -88,7 +88,8 @@ before_install:
     #- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install python; fi
     - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then virtualenv venv -p python; fi
     - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then source venv/bin/activate; fi
-    - if [[ "$PYENV_VERSION" == "2.7.12" ]]; then echo "pytest"; fi
+    - if [[ "$PYENV_VERSION" == "2.7.12" ]]; then echo "pytest 2"; fi
+    - if [[ "$PYENV_VERSION" == "3.5.1" ]]; then echo "pytest 3"; fi
 
 virtualenv:
   # without this, python 3.5 will not work

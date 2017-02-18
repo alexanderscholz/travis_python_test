@@ -7,41 +7,41 @@ matrix:
     # Ubuntu 12.04.5 LTS
     - os: linux
       python: '2.6'
-    #- os: linux
-    #  python: '2.7'
-    #- os: linux
-    #  python: '3.3'
-    #- os: linux
-    #  python: '3.4'
-    #- os: linux
-    #  python: '3.5'
+    - os: linux
+      python: '2.7'
+    - os: linux
+      python: '3.3'
+    - os: linux
+      python: '3.4'
+    - os: linux
+      python: '3.5'
 
     # Ubuntu 14.04.3 LTS
-    #- os: linux
-    #  dist: trusty
-    #  python: '2.6'
-    #- os: linux
-    #  dist: trusty
-    #  python: '2.7'
-    #- os: linux
-    #  dist: trusty
-    #  python: '3.3'
-    #- os: linux
-    #  dist: trusty
-    #  python: '3.4'
-    #- os: linux
-    #  dist: trusty
-    #  python: '3.5'
+    - os: linux
+      dist: trusty
+      python: '2.6'
+    - os: linux
+      dist: trusty
+      python: '2.7'
+    - os: linux
+      dist: trusty
+      python: '3.3'
+    - os: linux
+      dist: trusty
+      python: '3.4'
+    - os: linux
+      dist: trusty
+      python: '3.5'
 
     # OS X 10.10
     #- os: osx
     #  osx_image: xcode6.4
     #  language: generic
     #  env: PYENV_VERSION=2.7.12
-      #- os: osx
-      #  osx_image: xcode6.4
-      #  language: generic
-      #  env: PYENV_VERSION=3.5.1
+    #- os: osx
+    #  osx_image: xcode6.4
+    #  language: generic
+    #  env: PYENV_VERSION=3.5.1
 
     # OS X 10.11 
     - os: osx
@@ -58,10 +58,10 @@ matrix:
     #  osx_image: xcode8
     #  language: generic
     #  env: PYENV_VERSION=2.7.12
-      #- os: osx
-      #  osx_image: xcode8
-      #  language: generic
-      #  env: PYENV_VERSION=3.5.1
+    #- os: osx
+    #  osx_image: xcode8
+    #  language: generic
+    #  env: PYENV_VERSION=3.5.1
 
     # OS X 10.12
     - os: osx

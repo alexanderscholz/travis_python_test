@@ -48,10 +48,10 @@ matrix:
       osx_image: xcode7.3
       language: generic
       env: PYENV_VERSION=2.7.12
-      #- os: osx
-      #  osx_image: xcode7.3
-      #  language: generic
-      #  env: PYENV_VERSION=3.5.1
+      - os: osx
+        osx_image: xcode7.3
+        language: generic
+        env: PYENV_VERSION=3.6.0
 
     # OS X 10.11
     #- os: osx
@@ -68,10 +68,10 @@ matrix:
       osx_image: xcode8.1
       language: generic
       env: PYENV_VERSION=2.7.12
-      #- os: osx
-      #  osx_image: xcode8.1
-      #  language: generic
-      #  env: PYENV_VERSION=3.5.1
+      - os: osx
+        osx_image: xcode8.1
+        language: generic
+        env: PYENV_VERSION=3.6.0
 
     # OS X 10.12 
     - os: osx
@@ -81,21 +81,17 @@ matrix:
     - os: osx
       osx_image: xcode8.2
       language: generic
-      env: PYENV_VERSION=3.5.1
+      env: PYENV_VERSION=3.6.0
 
 before_install:
-    #- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update          ; fi
-    #- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install python; fi
-    #- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then virtualenv venv -p python; fi
-    #- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then source venv/bin/activate; fi
     - if [[ "$PYENV_VERSION" == "2.7.12" ]]; then echo "pytest 2"; fi
     - if [[ "$PYENV_VERSION" == "2.7.12" ]]; then virtualenv venv -p python; fi
     - if [[ "$PYENV_VERSION" == "2.7.12" ]]; then source venv/bin/activate; fi
-    - if [[ "$PYENV_VERSION" == "3.5.1" ]]; then echo "pytest 3"; fi
-    - if [[ "$PYENV_VERSION" == "3.5.1" ]]; then brew update; fi
-    - if [[ "$PYENV_VERSION" == "3.5.1" ]]; then brew install python3; fi
-    - if [[ "$PYENV_VERSION" == "3.5.1" ]]; then virtualenv venv -p python3; fi
-    - if [[ "$PYENV_VERSION" == "3.5.1" ]]; then source venv/bin/activate; fi
+    - if [[ "$PYENV_VERSION" == "3.6.0" ]]; then echo "pytest 3"; fi
+    - if [[ "$PYENV_VERSION" == "3.6.0" ]]; then brew update; fi
+    - if [[ "$PYENV_VERSION" == "3.6.0" ]]; then brew install python3; fi
+    - if [[ "$PYENV_VERSION" == "3.6.0" ]]; then virtualenv venv -p python3; fi
+    - if [[ "$PYENV_VERSION" == "3.6.0" ]]; then source venv/bin/activate; fi
 
 virtualenv:
   # without this, python 3.5 will not work

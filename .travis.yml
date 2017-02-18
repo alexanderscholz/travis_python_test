@@ -7,31 +7,41 @@ matrix:
     # Ubuntu 12.04.5 LTS
     - os: linux
       python: '2.6'
+      env: UBUNTU_VERSION=12.04.5_LTS
     - os: linux
       python: '2.7'
+      env: UBUNTU_VERSION=12.04.5_LTS
     - os: linux
       python: '3.3'
+      env: UBUNTU_VERSION=12.04.5_LTS
     - os: linux
       python: '3.4'
+      env: UBUNTU_VERSION=12.04.5_LTS
     - os: linux
       python: '3.5'
+      env: UBUNTU_VERSION=12.04.5_LTS
 
     # Ubuntu 14.04.3 LTS
     - os: linux
       dist: trusty
       python: '2.6'
+      env: UBUNTU_VERSION=14.04.3_LTS
     - os: linux
       dist: trusty
       python: '2.7'
+      env: UBUNTU_VERSION=14.04.3_LTS
     - os: linux
       dist: trusty
       python: '3.3'
+      env: UBUNTU_VERSION=14.04.3_LTS
     - os: linux
       dist: trusty
       python: '3.4'
+      env: UBUNTU_VERSION=14.04.3_LTS
     - os: linux
       dist: trusty
       python: '3.5'
+      env: UBUNTU_VERSION=14.04.3_LTS
 
     # OS X 10.10
     #- os: osx
